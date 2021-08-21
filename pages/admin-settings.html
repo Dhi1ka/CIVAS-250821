@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIVAS Admin Settings</title>
+  <link rel="shortcut icon" href="../img/favicon-571e8cf92d.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/admin-settings.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <a href="../index.html"><img src="../img/CIVAS.png" class="img-header" alt=""></a>
+    <div class="center-menu">
+      <ul>
+        <li class="tab-menu">
+          <a href="#koleksi">Koleksi</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#sejarah">Sejarah</a>
+            </li>
+            <li>
+              <a href="#khusus">Koleksi Khusus</a>
+            </li>
+          </ul>
+        </li>
+        <li class="tab-menu">
+          <a href="#blog">Blog</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#kegiatan">Kegiatan</a>
+            </li>
+            <li>
+              <a href="#sorotan">Sorotan</a>
+            </li>
+            <li>
+              <a href="#terbitan">Terbitan</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a href="#tentang">Tentang</a>
+        </li>
+        <li>
+          <a href="#kontak">Kontak</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-menu">
+      <div class="lang">
+        <a href="#id">ID</a>
+        <a href="#en">EN</a>
+      </div>
+      <br>
+      <div class="auth">
+        <!-- modal signin link -->
+        <a href="#masuk" class="modal-toggle">Masuk</a>
+        <!-- the modal -->
+        <div class="modal">
+          <div class="modal-overlay modal-toggle"></div>
+          <div class="modal-wrapper modal-transition">
+            <!-- modal header -->
+            <div class="modal-header">
+              <button class="modal-close modal-toggle"><img src="../img/closeModal.png" alt=""></button>
+              <h2 class="modal-heading">SIGN IN</h2>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <div class="modal-content">
+                <h4 style="font-weight: 100; text-align: center;">Please sign in to your CIVAS account below.</h4>
+                <br>
+                <p>Note: If you have already registered for a CIVAS account, please use the email address and the password you created when you registered.</p>
+                <br>
+                <label for="email">EMAIL*</label><input id="email" type="email">
+                <br>
+                <label for="password">PASSWORD*</label><input id="password" type="password">
+                <input type="submit" value="SUBMIT">
+              </div>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <p>If you have forgotten your password, you can reset it <a href="#">here</a>.</p>
+              <br>
+              <br>
+              <h3 style="font-weight: 100;">Don’t have an account yet ?</h3>
+              <br>
+              <p>Click <a href="./pages/signup.html">here</a>. to Sign Up</p>
+            </div>
+          </div>
+        </div>
+        <a href="./signup.html">Daftar</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- content -->
+  <div class="content-heading">
+    <h3>SETTING</h3>
+  </div>
+  <div class="content">
+    <div class="content-left">
+      <div class="content-avatar">
+        <img src="../img/adminAvatar.png" alt="">
+        <h5>Admin's Name</h5>
+        <p>Admin</p>
+      </div>
+      <div class="content-menu">
+        <ul>
+          <li>
+            <a href="#profile" class="profile">Profile</a>
+          </li>
+          <li class="content-tab">
+            <a href="#user">Manage User</a><button><img src="../img/expandBtn.png" alt=""></button>
+            <ul>
+              <li>
+                <a href="#search" class="search">Search User</a>
+              </li>
+              <li>
+                <a href="#member" class="member">Member List</a>
+              </li>
+            </ul>
+          </li>
+          <li class="content-tab">
+            <a href="#page">Manage Page</a><button><img src="../img/expandBtn.png" alt=""></button>
+            <ul>
+              <li>
+                <a href="#request" class="request">View User Request</a>
+              </li>
+              <li>
+                <a href="#status" class="status">View Page Status</a>
+              </li>
+            </ul>
+          </li>
+          <li class="content-tab">
+            <a href="#monitor">Log Monitor</a><button><img src="../img/expandBtn.png" alt=""></button>
+            <ul>
+              <li>
+                <a href="#registration" class="registration">User Registration</a>
+              </li>
+              <li>
+                <a href="#docs" class="docs">Downloaded Docs</a>
+              </li>
+              <li>
+                <a href="#artefact" class="artefact">Artefact Status</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="content-page">
+        <div id="profile" class="hidden">
+          <h5>View Profile</h5>
+          <form action="#">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="reset">RESET</button>
+            <button type="button">CHANGE PASSWORD</button>
+            <select name="account" id="account">
+              <option value="status" hidden>Account Status</option>
+              <option value="activate">Activate Account</option>
+              <option value="deactivate">Deactivate Account</option>
+            </select>
+            <br>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <div id="search" class="hidden">
+          <div>
+            <h5>Search User</h5>
+            <form action="#">
+              <input type="search" placeholder="Search User">
+              <button type="submit"><img src="../img/icon-search.png" style="width: 14px;" alt=""></button>
+            </form>
+          </div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Privilege</th>
+              <th>Status User</th>
+              <th>View Profile</th>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Active</td>
+              <td>View</td>
+            </tr>
+          </table>
+        </div>
+        <div id="member" class="hidden">
+          <h5>Member Privilege</h5>
+          <table>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Check</td>
+              <td>Update</td>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Check</td>
+              <td>Update</td>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Check</td>
+              <td>Update</td>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Check</td>
+              <td>Update</td>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Check</td>
+              <td>Update</td>
+            </tr>
+          </table>
+        </div>
+        <div id="request" class="hidden">
+          <h5>User Request</h5>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Privilege</th>
+              <th>Report Reason</th>
+              <th>View Profile</th>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Copyright</td>
+              <td>View</td>
+            </tr>
+          </table>
+        </div>
+        <div id="status" class="hidden">
+          <h5>Page Status</h5>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Privilege</th>
+              <th>Page Status</th>
+              <th>Report Reason</th>
+              <th>View Profile</th>
+            </tr>
+            <tr>
+              <td>Fulan</td>
+              <td>Member</td>
+              <td>Active</td>
+              <td>Copyright</td>
+              <td>View</td>
+            </tr>
+          </table>
+        </div>
+        <div id="registration" class="hidden">
+          <h5>Log File User Registration</h5>
+        </div>
+        <div id="docs" class="hidden">
+          <h5>Downloaded Docs</h5>
+        </div>
+        <div id="artefact" class="hidden">
+          <h5>Artefact Status</h5>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <!-- footer -->
+  <footer class="footer">
+    <!-- footer left -->
+    <div class="footer-left">
+      <div class="about-civas">
+        <div class="about-civas-left">
+          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <br>
+          <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
+          <br>
+        </div>
+        <div class="about-civas-right">
+          <p>Fakultas Seni Rupa dan Desain</p>
+          <p>Institut Teknologi Bandung</p>
+          <p>Jl. Ganesha 10, Kota Bandung</p>
+          <p>Jawa Barat, Indonesia</p>
+          <p>40132</p>
+          <br>
+          <p>+22 - 2534104</p>
+          <p>civasitb@gmail.com</p>
+        </div>
+      </div>
+      <br>
+    </div>
+    <!-- footer right -->
+    <div class="footer-right">
+      <div class="footer-right-group">
+        <div class="footer-right-form">
+          <form action="#">
+            <input type="email" id="register" placeholder="Email Address">
+            <button type="button"><img src="../img/arrowSubmit.png" alt=""></button>
+          </form>
+          <p class="register-label">Daftar untuk menerima undangan kegiatan CIVAS</p>
+        </div>
+        <a href="#join">Menjadi Anggota</a>
+      </div>
+      <p>Supported By:</p>
+      <div>
+        <img src="../img/alana_logo-01-4-bbb83936e6.png" alt="">
+        <div class="footer-right-content">
+          <img src="../img/ITB.png" class="img-footer" alt="">
+          <ul>
+            <li> Fakultas Seni Rupa dan Desain</li>
+            <li>Institut Teknologi Bandung </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr>
+  <div class="footer-bottom">
+    <p>CIVAS 2021 &copy; All rights Reserved</p>
+    <ul>
+      <li>
+        <a href="#facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#youtube">YouTube</a>
+      </li>
+      <li>
+        <a href="#instagram">Instagram</a>
+      </li>
+    </ul>
+  </div>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/admin-settings.js"></script>
+</body>
+</html>

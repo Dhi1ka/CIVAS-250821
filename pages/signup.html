@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIVAS Sign Up</title>
+  <link rel="shortcut icon" href="../img/favicon-571e8cf92d.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <a href="../index.html"><img src="../img/CIVAS.png" class="img-header" alt=""></a>
+    <div class="center-menu">
+      <ul>
+        <li class="tab-menu">
+          <a href="#koleksi">Koleksi</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#sejarah">Sejarah</a>
+            </li>
+            <li>
+              <a href="#khusus">Koleksi Khusus</a>
+            </li>
+          </ul>
+        </li>
+        <li class="tab-menu">
+          <a href="#blog">Blog</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#kegiatan">Kegiatan</a>
+            </li>
+            <li>
+              <a href="#sorotan">Sorotan</a>
+            </li>
+            <li>
+              <a href="#terbitan">Terbitan</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#tentang">Tentang</a>
+        </li>
+        <li>
+          <a href="#kontak">Kontak</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-menu">
+      <div class="lang">
+        <a href="#id">ID</a>
+        <a href="#en">EN</a>
+      </div>
+      <br>
+      <div class="auth">
+        <!-- modal signin link -->
+        <a href="#masuk" class="modal-toggle">Masuk</a>
+        <!-- the modal -->
+        <div class="modal">
+          <div class="modal-overlay modal-toggle"></div>
+          <div class="modal-wrapper modal-transition">
+            <!-- modal header -->
+            <div class="modal-header">
+              <button class="modal-close modal-toggle"><img src="../img/closeModal.png" alt=""></button>
+              <h2 class="modal-heading">SIGN IN</h2>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <div class="modal-content">
+                <h4 style="font-weight: 100; text-align: center;">Please sign in to your CIVAS account below.</h4>
+                <br>
+                <p>Note: If you have already registered for a CIVAS account, please use the email address and the password you created when you registered.</p>
+                <br>
+                <label for="email">EMAIL*</label><input id="email" type="email">
+                <br>
+                <label for="password">PASSWORD*</label><input id="password" type="password">
+                <input type="submit" value="SUBMIT">
+              </div>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <p>If you have forgotten your password, you can reset it <a href="#">here</a>.</p>
+              <br>
+              <br>
+              <h3 style="font-weight: 100;">Don’t have an account yet ?</h3>
+              <br>
+              <p>Click <a href="./signup.html">here</a>. to Sign Up</p>
+            </div>
+          </div>
+        </div>
+        <a href="./signup.html">Daftar</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- content -->
+  <div class="content">
+    <h3 style="font-weight: 200; margin-bottom: 12px;">PENDAFTARAN</h3>
+    <hr>
+    <!-- form -->
+    <form action="">
+      <label for="name">Nama</label>
+      <div>
+        <input type="text" id="name" placeholder="Nama Depan">
+        <input type="text" style="margin-left: 7px;" placeholder="Nama Belakang">
+      </div>
+      <label for="organization">Lembaga / Organisasi</label>
+      <div>
+        <input type="text" id="organization">
+      </div>
+      <label for="phone">No. Telepon</label>
+      <div>
+        <input type="text" id="phone">
+      </div>
+      <label for="email">Email</label>
+      <div>
+        <input type="email" id="email">
+      </div>
+      <label for="password">Password</label>
+      <label for="confirm-password">Ketik Ulang Password</label>
+      <div class="form-password">
+        <input type="password" id="password">
+        <input type="password" style="margin-left: 20px;" id="confirm-password">
+      </div>
+      <br>
+      <div>
+        <input type="checkbox" id="cataloger"><label for="cataloger">Cataloger *</label>
+        <button style="margin-left: 60px;" class="btnFile" type="button" onclick="browseFile()">Pilih Berkas</button>
+        <input id="inputFile" placeholder="Berkas Tidak Ditemukan" disabled>
+      </div>
+      <input type="checkbox" id="curator"><label for="curator">Curator *</label>
+      <br>
+      <br>
+      <input type="checkbox" id="agreement"><label for="agreement">Menyetujui Syarat dan Ketentuan CIVAS</label>
+      <div>
+        <button type="submit" class="regBtn">DAFTAR</button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- footer -->
+  <footer class="footer">
+    <!-- footer left -->
+    <div class="footer-left">
+      <div class="about-civas">
+        <div class="about-civas-left">
+          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <br>
+          <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
+          <br>
+        </div>
+        <div class="about-civas-right">
+          <p>Fakultas Seni Rupa dan Desain</p>
+          <p>Institut Teknologi Bandung</p>
+          <p>Jl. Ganesha 10, Kota Bandung</p>
+          <p>Jawa Barat, Indonesia</p>
+          <p>40132</p>
+          <br>
+          <p>+22 - 2534104</p>
+          <p>civasitb@gmail.com</p>
+        </div>
+      </div>
+      <br>
+    </div>
+    <!-- footer right -->
+    <div class="footer-right">
+      <div class="footer-right-group">
+        <div class="footer-right-form">
+          <form action="#">
+            <input type="email" id="register" placeholder="Email Address">
+            <button type="button"><img src="../img/arrowSubmit.png" alt=""></button>
+          </form>
+          <p class="register-label">Daftar untuk menerima undangan kegiatan CIVAS</p>
+        </div>
+        <a href="#join">Menjadi Anggota</a>
+      </div>
+      <p>Supported By:</p>
+      <div>
+        <img src="../img/alana_logo-01-4-bbb83936e6.png" alt="">
+        <div class="footer-right-content">
+          <img src="../img/ITB.png" class="img-footer" alt="">
+          <ul>
+            <li> Fakultas Seni Rupa dan Desain</li>
+            <li>Institut Teknologi Bandung </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <hr>
+  <div class="footer-bottom">
+    <p>CIVAS 2021 &copy; All rights Reserved</p>
+    <ul>
+      <li>
+        <a href="#facebook">Facebook</a>
+      </li>
+      <li>
+        <a href="#youtube">YouTube</a>
+      </li>
+      <li>
+        <a href="#instagram">Instagram</a>
+      </li>
+    </ul>
+  </div>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
