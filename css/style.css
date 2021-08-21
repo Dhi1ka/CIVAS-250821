@@ -561,6 +561,7 @@ footer {
 }
 
 .footer-right .footer-right-group {
+  width: 420px;
   display: flex;
 }
 
@@ -631,6 +632,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 1110px) {
+  .footer-right .footer-right-group a {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .footer-right .footer-right-group a {
     text-align: center;
@@ -657,7 +664,7 @@ footer {
 }
 
 .footer-right div .footer-right-content {
-  width: 70%;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
