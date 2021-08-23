@@ -671,7 +671,7 @@ footer {
 .footer-right div .footer-right-content {
   width: 420px;
   display: flex;
-  margin-top: 20px;
+  
   align-items: center;
   justify-content: space-between;
 }
