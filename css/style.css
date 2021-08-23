@@ -35,10 +35,6 @@ h1, h2, h3, h4, h5, h6, strong {
   font-weight: bold;
 }
 
-p, ul, li {
-  font-size: 14px;
-}
-
 /* header start */
 header {
   width: 100%;
@@ -47,30 +43,32 @@ header {
   padding: 25px 50px;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  /* position: fixed; */
   background-color: #fff;
   z-index: 999;
 }
 
 .img-header {
-  width: 210px;
+  width: 220px;
 }
 
 .center-menu ul {
   display: flex;
+  font-size: 14px;
   margin-right: 120px;
 }
 
 .center-menu ul li {
-  margin-top: 1.2rem;
+  margin-top: 2rem;
   list-style: none;
-  transition: all 0.3s;
+  
 }
 
 .center-menu ul li a {
   text-decoration: none;
   color: #676767;
-  padding: 3rem;
+  margin: 2.5rem;
+  padding: 10px;
 }
 
 .center-menu ul li a:hover {
@@ -82,17 +80,15 @@ header {
 }
 
 .center-menu ul .tab-menu:hover .sub-menu {
-  display: grid;
+  display: block;
   position: absolute;
 }
 
-.sub-menu li {
-  width: 200px;
+.sub-menu li a {
+  transition: all 0.3s;
 }
 
-.sub-menu li:hover {
-  width: 210px;
-  height: 17px;
+.sub-menu li .sub-list:hover {
   background-color: #d0d2d3;
   color: #fff;
 }
@@ -512,6 +508,7 @@ footer {
 /* footer left */
 .footer-left {
   width: 70%;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -527,16 +524,22 @@ footer {
 
 .about-civas {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .about-civas-left p {
-  width: 70%;
+  width: 75%;
+  font-size: 12px;
 }
 
 .about-civas-right {
   margin-top: 10px;
   width: 120%;
+}
+
+.about-civas-right p {
+  font-size: 12px;
+  line-height: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -581,7 +584,7 @@ footer {
 
 .footer-right-form form input {
   font-family: Archivo, sans-serif;
-  width: 220px;
+  width: 250px;
   height: 30px;
   border: none;
   border-radius: 0;
@@ -591,7 +594,7 @@ footer {
 }
 
 .footer-right-form form {
-  width: 250px;
+  width: 280px;
   border-bottom: 1px #000 solid;
 }
 
@@ -605,14 +608,15 @@ footer {
 }
 
 .footer-right-form .register-label {
-  font-size: 12px;
-  margin: 0 0 20px 0;
+  font-size: 11px;
+  margin: 8px 0 20px 0;
 }
 
 .footer-right .footer-right-group a {
   width: 180px;
   height: 40px;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: center;
   border: 1px solid;
   border-radius: 4px;
   padding: 10px;
@@ -664,7 +668,7 @@ footer {
 }
 
 .footer-right div .footer-right-content {
-  width: 300px;
+  width: 420px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -672,13 +676,13 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .footer-right div .footer-right-content {
-    width: 290px;
-    margin-left: -20px;
+    width: 420px;
   }
 }
 
 .footer-right-content ul li {
   list-style: none;
+  font-size: 12px;
 }
 
 .footer-right div img {
@@ -687,9 +691,9 @@ footer {
 }
 
 .footer-right div .footer-right-content .img-footer {
-  width: 70px;
-  height: 70px;
-  margin-left: 20px;
+  width: 65px;
+  height: 65px;
+  margin-left: 25px;
 }
 
 .footer-bottom {
@@ -698,11 +702,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 25px;
 }
 
 .footer-bottom p {
   width: 55%;
   margin: auto;
+  font-size: 14px;
 }
 
 .footer-bottom ul {
