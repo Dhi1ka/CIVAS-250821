@@ -444,7 +444,7 @@ header {
 
 .content div form input {
   font-family: Archivo, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   width: 400px;
   height: 31px;
   border: none;
@@ -541,8 +541,8 @@ footer {
 }
 
 .about-civas-left .footer-left-content img {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   margin-left: 25px;
 }
 
@@ -563,7 +563,7 @@ footer {
 
 .about-civas-right img {
   width: 150px;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
